@@ -22,4 +22,9 @@
   </div>
   <p appBasicHighlight> My Directive</p>
   <p [appBetterHighlight] ="'cyan'" [defaultColor] = "'yellow'" > My appBetterHighlight Directive</p>
+
+  <div [ngSwitch]="value">
+    <div *ngSwitchCase="7">{{value}}</div>
+    <div *ngSwitchDefault>Value Doesn't match</div>
+  </div>
 </div>
